@@ -1,16 +1,73 @@
-# React + Vite
+# Simple Weather Checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the Project
+This is a simple Weather Checker web application built using React and Vite.  
+The goal of this project was to practice core React concepts like state management, hooks, and working with external APIs.
 
-Currently, two official plugins are available:
+The app allows users to search for live weather data of any city, switch between temperature units, and view their recent search history. All dynamic updates happen instantly without reloading the page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Problem Statement
+Checking live weather and remembering recently searched cities can be tedious.  
+This project solves that problem by providing a fast, responsive, and easy-to-use weather dashboard that fetches real-time data using the OpenWeather API.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features
+- Automatically loads default weather data on startup
+- Fetch real-time weather data (temperature and current conditions)
+- Instantly toggle between Celsius (°C) and Fahrenheit (°F)
+- Maintain a history of the last 10 searched cities as clickable buttons
+- Prevent duplicate cities from being added to the search history
+- Show responsive weather icons and handle invalid city names gracefully
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Concepts Used
+- React Hooks (useState for state management, useEffect for component lifecycle)
+- Preventing infinite loops with dependency arrays
+- Fetching and handling asynchronous API data (fetch)
+- Dynamic list rendering using JavaScript .map() and unique keys
+- Preventing duplicate array entries using the .includes() method
+- Centering UI elements perfectly using CSS Flexbox
+
+---
+
+## Technologies Used
+- React.js
+- Vite (Build Tool)
+- Vanilla CSS3
+- OpenWeatherMap API
+
+---
+
+## How to Run
+
+1. Download or clone the repository:
+   git clone https://github.com/harshgzp11/Simple-Weather-Checker.git
+
+2. Open the project folder in your terminal:
+   cd Simple-Weather-Checker
+
+3. Install the required dependencies:
+   npm install
+
+4. Start the development server:
+   npm run dev
+
+5. Open the provided localhost link in your web browser.
+
+---
+
+## Limitations
+- Requires an active internet connection to fetch API data
+- Search history is only maintained for the current session (resets on reload)
+- Relies on a free-tier API which may have daily request limits
+
+---
+
+## Author
+Harsh Srivastava
+10182
+Batch of 2029
