@@ -68,6 +68,6 @@ This project solves that problem by providing a fast, responsive, and easy-to-us
 ---
 
 ## Author
-Harsh Srivastava
-10182
-Batch of 2029
+- Harsh Srivastava
+- 10182
+- Batch of 2029
